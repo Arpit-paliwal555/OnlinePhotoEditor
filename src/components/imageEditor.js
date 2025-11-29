@@ -313,6 +313,20 @@ function ImageEditor() {
 
   function cancelButton() {
     // Task 10 Code here
+    setCanvasVisisble({ display: "inline-block" });
+    setFabricCanvasVisisble({ display: "none" });
+    loadCanvas(previousState);
+    setFabricCanvas(fabricCanvas.clear());
+
+    setRotateDeg(0);
+    setId(0);
+    setIsCropClicked(false);
+    setIsRotateClicked(false);
+    setIsShapesClicked(false);
+    setIsResizeClicked(false);
+    setIsTextClicked(false);
+    toggleSelector(false);
+
   }
 
   function downloadImg() {
